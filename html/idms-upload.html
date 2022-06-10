@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+  <base href="../" />
+  <meta charset="utf-8" />
+  <meta name="author" content="Softnio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="your apps desc here" />
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <title>Upload Data | IDMS</title>
+
+  <link rel="stylesheet" href="assets/css/dashlite.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+
+  <link rel="stylesheet" href="assets/css/skins/theme-red.css" />
+  <style>
+    .gradient-text {
+      /* Fallback: Set a background color. */
+      background-color: red;
+
+      /* Create the gradient. */
+      background-image: linear-gradient(45deg, #d61c4e, #874356);
+
+      /* Set the background size and repeat properties. */
+      background-size: 100%;
+      background-repeat: repeat;
+
+      /* Use the text as a mask for the background. */
+      /* This will show the gradient as a text color rather than element bg. */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="nk-body bg-lighter npc-default has-sidebar">
+  <div class="nk-app-root">
+    <div class="nk-main">
+      <div class="nk-sidebar nk-sidebar-fixed is-light" data-content="sidebarMenu">
+        <div class="nk-sidebar-element nk-sidebar-head">
+          <div class="nk-sidebar-brand">
+            <a href="html/idms-index.html" class="logo-link nk-sidebar-logo">
+              <span>
+                <h3>
+                  <em class="icon ni ni-activity-round-fill gradient-text"></em>
+                  <span class="gradient-text">IDMS</span>
+                </h3>
+              </span>
+            </a>
+          </div>
+          <div class="nk-menu-trigger me-n2">
+            <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em
+                class="icon ni ni-arrow-left"></em></a>
+            <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em
+                class="icon ni ni-menu"></em></a>
+          </div>
+        </div>
+
+        <div class="nk-sidebar-element">
+          <div class="nk-sidebar-content">
+            <div class="nk-sidebar-menu" data-simplebar>
+              <ul class="nk-menu">
+                <li class="nk-menu-heading">
+                  <h6 class="overline-title text-primary-alt">Search</h6>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-search.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-search"></em>
+                    </span>
+                    <span class="nk-menu-text">Billing / Reminding</span>
+                  </a>
+                </li>
+                <li class="nk-menu-heading">
+                  <h6 class="overline-title text-primary-alt">Dashboard</h6>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-dashboard-orders.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-todo-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Orders</span>
+                  </a>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-dashboard-performance.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-growth-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Performance</span>
+                  </a>
+                </li>
+                <li class="nk-menu-heading">
+                  <h6 class="overline-title text-primary-alt">Report</h6>
+                </li>
+                <li class="nk-menu-item has-sub">
+                  <a href="#" class="nk-menu-link nk-menu-toggle">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-bar-chart-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Report</span>
+                  </a>
+                  <ul class="nk-menu-sub">
+                    <li class="nk-menu-item">
+                      <a href="html/idms-report-billing.html" class="nk-menu-link">
+                        <span class="nk-menu-text">Billing</span>
+                      </a>
+                    </li>
+                    <li class="nk-menu-item">
+                      <a href="html/idms-report-billing.html" class="nk-menu-link">
+                        <span class="nk-menu-text">Reminding</span>
+                      </a>
+                    </li>
+                    <li class="nk-menu-item">
+                      <a href="html/idms-report-sourtessy.html" class="nk-menu-link">
+                        <span class="nk-menu-text">Courtessy</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nk-menu-heading">
+                  <h6 class="overline-title text-primary-alt">Data Management</h6>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-upload.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-upload"></em>
+                    </span>
+                    <span class="nk-menu-text">Upload</span>
+                  </a>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-undunning.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-db-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Undunning</span>
+                  </a>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-sla.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-clock-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">SLA</span>
+                  </a>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-schdule.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-calendar-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Shedule</span>
+                  </a>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/idms-schdule.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-shield-check-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Validation</span>
+                  </a>
+                </li>
+                <li class="nk-menu-heading">
+                  <h6 class="overline-title text-primary-alt">Resources</h6>
+                </li>
+                <li class="nk-menu-item">
+                  <a href="html/pricing-table.html" class="nk-menu-link">
+                    <span class="nk-menu-icon">
+                      <em class="icon ni ni-users-fill"></em>
+                    </span>
+                    <span class="nk-menu-text">Users Managment</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nk-wrap">
+        <div class="nk-header nk-header-fixed is-light">
+          <div class="container-fluid">
+            <div class="nk-header-wrap">
+              <div class="nk-menu-trigger d-xl-none ms-n1">
+                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em
+                    class="icon ni ni-menu"></em></a>
+              </div>
+              <div class="nk-header-brand d-xl-none">
+                <a href="html/index.html" class="logo-link">
+                  <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo" />
+                  <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x"
+                    alt="logo-dark" />
+                </a>
+              </div>
+              <div class="nk-header-search ms-3 ms-xl-0">
+                <!-- <em class="icon ni ni-search"></em> -->
+                <!-- <input
+                    type="text"
+                    class="form-control border-transparent form-focus-none"
+                    placeholder="Search anything"
+                  /> -->
+              </div>
+              <div class="nk-header-tools">
+                <ul class="nk-quick-nav">
+                  <li class="dropdown notification-dropdown">
+                    <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                      <div class="icon-status icon-status-info">
+                        <em class="icon ni ni-bell"></em>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                      <div class="dropdown-head">
+                        <span class="sub-title nk-dropdown-title">Notifications</span>
+                        <!-- <a href="#">Mark All as Read</a> -->
+                      </div>
+                      <div class="dropdown-body">
+                        <div class="nk-notification">
+                          <div class="nk-notification-item dropdown-inner">
+                            <div class="nk-notification-icon">
+                              <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                            </div>
+                            <div class="nk-notification-content">
+                              <div class="nk-notification-text">
+                                You have requested to
+                                <span><b>Upload Data</b></span>
+                              </div>
+                              <div class="nk-notification-time">
+                                1 hrs ago
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-foot center">
+                        <a href="#">View All</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown user-dropdown">
+                    <a href="#" class="dropdown-toggle me-n1" data-bs-toggle="dropdown">
+                      <div class="user-toggle">
+                        <div class="user-avatar sm">
+                          <em class="icon ni ni-user-alt"></em>
+                        </div>
+                        <div class="user-info d-none d-xl-block">
+                          <div class="user-status user-status-unverified">
+                            User Level
+                          </div>
+                          <div class="user-name dropdown-indicator">
+                            Username
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-md dropdown-menu-end">
+                      <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                        <div class="user-card">
+                          <div class="user-avatar">
+                            <span>AB</span>
+                          </div>
+                          <div class="user-info">
+                            <span class="lead-text">Username</span>
+                            <span class="sub-text">info@user.com</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-inner">
+                        <ul class="link-list">
+                          <li>
+                            <a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a>
+                          </li>
+                          <li>
+                            <a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nk-content">
+          <div class="container-fluid">
+            <div class="nk-content-inner">
+              <div class="nk-content-body">
+                <div class="nk-block-head nk-block-head-sm">
+                  <div class="nk-block-between">
+                    <div class="nk-block-head-content">
+                      <h3 class="nk-block-title page-title">Upload Data</h3>
+                    </div>
+                    <div class="nk-block-head-content">
+                      <div class="toggle-wrap nk-block-tools-toggle">
+                        <a href="#" class="btn btn-icon btn-trigger toggle-expand me-n1" data-target="pageMenu"><em
+                            class="icon ni ni-more-v"></em></a>
+                        <div class="toggle-expand-content" data-content="pageMenu">
+                          <form action="">
+                            <ul class="nk-block-tools g-3">
+                              <li><b>Select Template </b></li>
+                              <li>
+                                <select class="form-select js-select2" data-placeholder="Choose Type"
+                                  style="width: 100%">
+                                  <option value="default_option">Choose</option>
+                                  <option value="Email">Email</option>
+                                  <option value="TVMS">TVMS</option>
+                                  <option value="Whatsapp">Whatsapp</option>
+                                  <option value="OVR">OVR</option>
+                                  <option value="SMS">SMS</option>
+                                </select>
+                              </li>
+                              <li class="nk-block-tools-opt">
+                                <button type="submit" class="toggle btn btn-icon btn-primary d-md-none">
+                                  <em class="icon ni ni-download"></em>
+                                  <span>Download</span>
+                                </button>
+                                <button type="submit" type="submit" class="toggle btn btn-primary d-none d-md-inline-flex">
+                                  <em class="icon ni ni-download"></em>
+                                  <span>Download</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nk-block">
+                  <div class="card card-bordered card-preview">
+                    <div class="card-inner">
+                      <div class="row g-gs">
+                        <div class="col-xxl-2 col-md-4 col-sm-12">
+                          <ul class="nav link-list-menu border border-light round m-0">
+                            <li>
+                              <a class="active" data-bs-toggle="tab" href="#email">
+                                <span class="badge bg-info" style="margin-right: 10px">0</span>
+                                Email
+                              </a>
+                            </li>
+                            <li>
+                              <a class="" data-bs-toggle="tab" href="#tvms">
+                                <span class="badge bg-info" style="margin-right: 10px">0</span>
+                                TVMS
+                              </a>
+                            </li>
+                            <li>
+                              <a class="" data-bs-toggle="tab" href="#whatsapp">
+                                <span class="badge bg-info" style="margin-right: 10px">0</span>
+                                Whatsapp
+                              </a>
+                            </li>
+                            <li>
+                              <a class="" data-bs-toggle="tab" href="#ovr">
+                                <span class="badge bg-info" style="margin-right: 10px">0</span>
+                                OVR
+                              </a>
+                            </li>
+                            <li>
+                              <a class="" data-bs-toggle="tab" href="#sms">
+                                <span class="badge bg-info" style="margin-right: 10px">0</span>
+                                SMS
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-xxl-10 col-md-8 col-sm-12">
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="email">
+                              <div class="row gy-4">
+                                <div class="col-sm-6">
+                                  <div class="card card-bordered card-preview">
+                                    <div class="card-inner">
+                                      <h5 class="text-danger">
+                                        <em class="icon ni ni-alert-fill"></em>
+                                        Email Upload Term & Condition
+                                      </h5>
+                                      <p>Please follow the exact instruction below :</p>
+                                      <ul class="list list-sm list-checked">
+                                        <li>Publishing any Website material in any other media;</li>
+                                        <li>Selling, sublicensing and/or otherwise commercializing any Website material;
+                                        </li>
+                                        <li>Using this Website in any way that is or may be damaging to this Website;
+                                        </li>
+                                        <li>Certain areas of this Website are restricted from being access by you and
+                                          Company Name may further restrict access by you to any areas of this Website,
+                                          at any time, in absolute discretion. Any user ID and password you may have for
+                                          this Website are confidential and you must maintain confidentiality as well.
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="upload-zone">
+                                    <div class="dz-message" data-dz-message>
+                                      <span class="dz-message-text">Drag and drop file</span>
+                                      <span class="dz-message-or">or</span>
+                                      <button class="btn btn-primary">
+                                        Choose Files
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="tvms">
+                              <div class="row gy-4">
+                                <div class="col-sm-6">
+                                  <div class="card card-bordered card-preview">
+                                    <div class="card-inner">
+                                      <h5 class="text-danger">
+                                        <em class="icon ni ni-alert-fill"></em>
+                                        TVMS Upload Term & Condition
+                                      </h5>
+                                      <p>Please follow the exact instruction below :</p>
+                                      <ul class="list list-sm list-checked">
+                                        <li>Publishing any Website material in any other media;</li>
+                                        <li>Selling, sublicensing and/or otherwise commercializing any Website material;
+                                        </li>
+                                        <li>Using this Website in any way that is or may be damaging to this Website;
+                                        </li>
+                                        <li>Certain areas of this Website are restricted from being access by you and
+                                          Company Name may further restrict access by you to any areas of this Website,
+                                          at any time, in absolute discretion. Any user ID and password you may have for
+                                          this Website are confidential and you must maintain confidentiality as well.
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="upload-zone">
+                                    <div class="dz-message" data-dz-message>
+                                      <span class="dz-message-text">Drag and drop file</span>
+                                      <span class="dz-message-or">or</span>
+                                      <button class="btn btn-primary">
+                                        Choose Files
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="whatsapp">
+                              <div class="row gy-4">
+                                <div class="col-sm-6">
+                                  <div class="card card-bordered card-preview">
+                                    <div class="card-inner">
+                                      <h5 class="text-danger">
+                                        <em class="icon ni ni-alert-fill"></em>
+                                        Whatsapp Upload Term & Condition
+                                      </h5>
+                                      <p>Please follow the exact instruction below :</p>
+                                      <ul class="list list-sm list-checked">
+                                        <li>Publishing any Website material in any other media;</li>
+                                        <li>Selling, sublicensing and/or otherwise commercializing any Website material;
+                                        </li>
+                                        <li>Using this Website in any way that is or may be damaging to this Website;
+                                        </li>
+                                        <li>Certain areas of this Website are restricted from being access by you and
+                                          Company Name may further restrict access by you to any areas of this Website,
+                                          at any time, in absolute discretion. Any user ID and password you may have for
+                                          this Website are confidential and you must maintain confidentiality as well.
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="upload-zone">
+                                    <div class="dz-message" data-dz-message>
+                                      <span class="dz-message-text">Drag and drop file</span>
+                                      <span class="dz-message-or">or</span>
+                                      <button class="btn btn-primary">
+                                        Choose Files
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="ovr">
+                              <div class="row gy-4">
+                                <div class="col-sm-6">
+                                  <div class="card card-bordered card-preview">
+                                    <div class="card-inner">
+                                      <h5 class="text-danger">
+                                        <em class="icon ni ni-alert-fill"></em>
+                                        OVR Upload Term & Condition
+                                      </h5>
+                                      <p>Please follow the exact instruction below :</p>
+                                      <ul class="list list-sm list-checked">
+                                        <li>Publishing any Website material in any other media;</li>
+                                        <li>Selling, sublicensing and/or otherwise commercializing any Website material;
+                                        </li>
+                                        <li>Using this Website in any way that is or may be damaging to this Website;
+                                        </li>
+                                        <li>Certain areas of this Website are restricted from being access by you and
+                                          Company Name may further restrict access by you to any areas of this Website,
+                                          at any time, in absolute discretion. Any user ID and password you may have for
+                                          this Website are confidential and you must maintain confidentiality as well.
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="upload-zone">
+                                    <div class="dz-message" data-dz-message>
+                                      <span class="dz-message-text">Drag and drop file</span>
+                                      <span class="dz-message-or">or</span>
+                                      <button class="btn btn-primary">
+                                        Choose Files
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="tab-pane" id="sms">
+                              <div class="row gy-4">
+                                <div class="col-sm-6">
+                                  <div class="card card-bordered card-preview">
+                                    <div class="card-inner">
+                                      <h5 class="text-danger">
+                                        <em class="icon ni ni-alert-fill"></em>
+                                        SMS Upload Term & Condition
+                                      </h5>
+                                      <p>Please follow the exact instruction below :</p>
+                                      <ul class="list list-sm list-checked">
+                                        <li>Publishing any Website material in any other media;</li>
+                                        <li>Selling, sublicensing and/or otherwise commercializing any Website material;
+                                        </li>
+                                        <li>Using this Website in any way that is or may be damaging to this Website;
+                                        </li>
+                                        <li>Certain areas of this Website are restricted from being access by you and
+                                          Company Name may further restrict access by you to any areas of this Website,
+                                          at any time, in absolute discretion. Any user ID and password you may have for
+                                          this Website are confidential and you must maintain confidentiality as well.
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="upload-zone">
+                                    <div class="dz-message" data-dz-message>
+                                      <span class="dz-message-text">Drag and drop file</span>
+                                      <span class="dz-message-or">or</span>
+                                      <button class="btn btn-primary">
+                                        Choose Files
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nk-footer">
+          <div class="container-fluid">
+            <div class="nk-footer-wrap">
+              <div class="nk-footer-copyright">
+                &copy; 2022 Design by
+                <a href="#" target="">DevOps</a>
+              </div>
+              <div class="nk-footer-links"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/bundle.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/charts/chart-ecommerce.js"></script>
+  <script src="assets/js/libs/jstree.js"></script>
+  <script src="assets/js/example-tree.js"></script>
+  <script src="assets/js/charts/chart-sales.js"></script>
+  <script src="assets/js/libs/datatable-btns.js"></script>
+</body>
+
+</html>
