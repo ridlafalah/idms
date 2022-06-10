@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="your apps desc here" />
   <link rel="shortcut icon" href="./images/favicon.png" />
-  <title>Dashboard Performance| IDMS</title>
+  <title>User Managements | IDMS</title>
 
   <link rel="stylesheet" href="assets/css/dashlite.css" />
   <link rel="stylesheet" href="assets/css/theme.css" />
@@ -293,9 +293,7 @@
                 <div class="nk-block-head nk-block-head-sm">
                   <div class="nk-block-between">
                     <div class="nk-block-head-content">
-                      <h3 class="nk-block-title page-title">
-                        Dashboard Performance
-                      </h3>
+                      <h3 class="nk-block-title page-title">User Managements</h3>
                     </div>
                     <div class="nk-block-head-content">
                       <div class="toggle-wrap nk-block-tools-toggle">
@@ -303,222 +301,138 @@
                             class="icon ni ni-more-v"></em></a>
                         <div class="toggle-expand-content" data-content="pageMenu">
                           <ul class="nk-block-tools g-3">
-                            <li>
-                              <div class="drodown">
-                                <a href="#" class="dropdown-toggle btn btn-white btn-dim btn-outline-light"
-                                  data-bs-toggle="dropdown"><em
-                                    class="d-none d-sm-inline icon ni ni-calender-date"></em><span><span
-                                      class="d-none d-md-inline">Last</span>
-                                    30 Days</span><em class="dd-indc icon ni ni-chevron-right"></em></a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                  <ul class="link-list-opt no-bdr">
-                                    <li>
-                                      <a href="#"><span>Last 30 Days</span></a>
-                                    </li>
-                                    <li>
-                                      <a href="#"><span>Last 6 Months</span></a>
-                                    </li>
-                                    <li>
-                                      <a href="#"><span>Last 1 Years</span></a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
                             <li class="nk-block-tools-opt">
-                              <a href="#" class="btn btn-primary"><em
-                                  class="icon ni ni-reports"></em><span>Reports</span></a>
+                              <button type="submit" class="toggle btn btn-icon btn-primary d-md-none"
+                                data-bs-toggle="modal" data-bs-target="#modalForm">
+                                <em class="icon ni ni-plus-round"></em>
+                                <span>New User</span>
+                              </button>
+                              <button type="submit" type="submit" class="toggle btn btn-primary d-none d-md-inline-flex"
+                                data-bs-toggle="modal" data-bs-target="#modalForm">
+                                <em class="icon ni ni-plus-round"></em>
+                                <span>New User</span>
+                              </button>
                             </li>
                           </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="row g-gs">
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered" style="position:relative;">
-                  <div class="nk-ecwg nk-ecwg6">
-                    <div class="card-inner">
-                      <div class="card-title-group">
-                        <div class="card-title">
-                          <h6 class="title">TOTAL KPI SCORE</h6>
-                        </div>
-                      </div>
-                      <div class="data">
-                        <div class="data-group">
-                          <div class="amount"><h1>93.<small>21</small></h1></div>
-                          <div class="nk-ecwg6-ck">
-                            <em class="icon ni ni-meter h1 text-teal" style="position:absolute; top: 50px; right:10px;"></em>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                          <div class="modal fade" id="modalForm">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Create New User</h5>
+                                  <a href="#" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <em class="icon ni ni-cross"></em>
+                                  </a>
+                                </div>
+                                <div class="modal-body">
+                                  <form action="#" class="form-validate is-alter">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label class="form-label" for="email-address">Email address</label>
+                                          <div class="form-control-wrap">
+                                            <input type="text" class="form-control" id="email-address" required>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="form-label" for="full-username">Username</label>
+                                          <div class="form-control-wrap">
+                                            <input type="text" class="form-control" id="full-username" required>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="form-label" for="full-username">Privilege</label>
+                                          <div class="form-control-wrap">
+                                            <select class="form-select js-select2" data-placeholder="Choose Type"
+                                              style="width: 100%">
+                                              <option value="default_option">Choose</option>
+                                              <option value="Administrator">Administrator</option>
+                                              <option value="User">User</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label class="form-label" for="full-name">Full Name</label>
+                                          <div class="form-control-wrap">
+                                            <input type="text" class="form-control" id="full-name" required>
+                                          </div>
+                                        </div>
 
-                <div class="card card-bordered" style="position:relative;">
-                  <span class="pricing-badge badge bg-secondary">Score : 6.7</span>
-                  <div class="nk-ecwg nk-ecwg6">
-                    <div class="card-inner">
-                      <div class="card-title-group">
-                        <div class="card-title">
-                          <h6 class="title">DOWNTIME COUNTER (MoM)</h6>
-                        </div>
-                      </div>
-                      <div class="data">
-                        <div class="data-group">
-                          <div class="mt-5">
-                            <h3>
-                              <span>0</span>
-                              <span>D</span>
-                              <span>:</span>
-                              <span>0</span>
-                              <span>H</span>
-                              <span>:</span>
-                              <span>0</span>
-                              <span>M</span>
-                              <span>:</span>
-                              <span>0</span>
-                              <span>S</span>
-                            </h2>
-                          </div>
-                          <div class="nk-ecwg6-ck">
-                            <em class="icon ni ni-server-fill h1 text-danger" style="position:absolute; top: 50px; right:10px;"></em>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 4.8</span>
-                    <div class="card-inner">
-                      <h5 class="">KPI SMS</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="40008" data-fontWeight="24" data-fgColor="#f4bd0e" data-bgColor="#d9e5f7" data-max="101128" data-thickness=".15" data-width="290" data-height="145">
-                      </div>
-                      <div class="text-center mt-5">
-                        <h5>SMS Target : 101.128/<small><b>Per Hour</b></small> </h1>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 4.8</span>
-                    <div class="card-inner">
-                      <h5 class="">KPI EMAIL</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="14357" data-fontWeight="24" data-fgColor="#e85347" data-bgColor="#d9e5f7" data-max="24357" data-thickness=".15" data-width="290" data-height="145">
-                      </div>
-                      <div class="text-center mt-5">
-                        <h5>EMAIL Target : 24.357/<small><b>Per Hour</b></small> </h1>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered" style="position:relative;">
-                  <span class="pricing-badge badge bg-secondary">Score : 5</span>
-                  <div class="nk-ecwg nk-ecwg6">
-                    <div class="card-inner">
-                      <div class="card-title-group">
-                        <div class="card-title">
-                          <h6 class="title">ACCURACY REPORT</h6>
-                        </div>
-                      </div>
-                      <div class="data">
-                        <div class="data-group">
-                          <div class="amount"><h1>293.234.123</h1></div>
-                          <div class="nk-ecwg6-ck">
-                            <em class="icon ni ni-download h1 text-blue" style="position:absolute; top: 50px; right:10px;"></em>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                                        <div class="form-group">
+                                          <label class="form-label mb-3" for="gender">Gender</label>
+                                          <div class="form-control-wrap mb-4">
+                                            <div class="custom-control custom-radio">
+                                              <input type="radio" class="custom-control-input" name="radioSize"
+                                                id="male">
+                                              <label class="custom-control-label" for="male">Male</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                              <input type="radio" class="custom-control-input" name="radioSize"
+                                                id="female">
+                                              <label class="custom-control-label" for="female">Female</label>
+                                            </div>
+                                          </div>
+                                        </div>
 
-                <div class="card card-bordered" style="position:relative;">
-                  <span class="pricing-badge badge bg-secondary">Score : 5</span>
-                  <div class="nk-ecwg nk-ecwg6">
-                    <div class="card-inner">
-                      <div class="card-title-group">
-                        <div class="card-title">
-                          <h6 class="title">TRANSFER DATA</h6>
-                        </div>
-                      </div>
-                      <div class="data">
-                        <div class="data-group">
-                          <div class="amount"><h1>293.234.123</h1></div>
-                          <div class="nk-ecwg6-ck">
-                            <em class="icon ni ni-upload h1 text-teal" style="position:absolute; top: 50px; right:10px;"></em>
+                                        <div class="form-group">
+                                          <label class="form-label" for="full-username">Handphone</label>
+                                          <div class="form-control-wrap">
+                                            <input type="number" class="form-control" id="handphone" required>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                      <button type="submit" class="btn btn-lg btn-primary">Create User</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 4.8</span>
+                <div class="nk-block">
+                  <div class="card card-bordered card-preview">
                     <div class="card-inner">
-                      <h5 class="">KPI OVR</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="5373" data-fontWeight="24" data-fgColor="#816bff" data-bgColor="#d9e5f7" data-max="11373" data-thickness=".15" data-width="290" data-height="145">
+                      <div class="table-responsive">
+                        <table class="datatable-init nowrap table" id="tableemail">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Username</th>
+                              <th>Email</th>
+                              <th>Privilege</th>
+                              <th>Full Name</th>
+                              <th>Gender</th>
+                              <th>Full Name</th>
+                              <th>Handphone</th>
+                              <th>Status</th>
+                              <th>Last Updated</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- <tr>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                  </tr> -->
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="text-center mt-5">
-                        <h5>OVR Target : 11.373/<small><b>Per Hour</b></small> </h1>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 4.8</span>
-                    <div class="card-inner">
-                      <h5 class="">KPI TVMS</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="143355" data-fontWeight="24" data-fgColor="#ffa353" data-bgColor="#d9e5f7" data-max="343355" data-thickness=".15" data-width="290" data-height="145">
-                      </div>
-                      <div class="text-center mt-5">
-                        <h5>TVMS Target : 343.355/<small><b>Per Hour</b></small> </h1>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 4.8</span>
-                    <div class="card-inner">
-                      <h5 class="">KPI Whatsapp</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="34000" data-fontWeight="24" data-fgColor="#20c997" data-bgColor="#d9e5f7" data-max="54000" data-thickness=".15" data-width="290" data-height="145">
-                      </div>
-                      <div class="text-center mt-5">
-                        <h5>Whatsapp Target : 54.000/<small><b>Per Hour</b></small> </h1>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xxl-3">
-                <div class="card card-bordered">
-                  <span class="pricing-badge badge bg-secondary">Score : 8</span>
-                    <div class="card-inner">
-                      <h5 class="">KPI MTTR</h5>
-                      <div class="nk-knob text-center font-weight-bold mt-5">
-                          <input type="text" class="knob-half" value="9" data-fontWeight="24" data-fgColor="#559bfb" data-bgColor="#d9e5f7" data-max="10  " data-thickness=".15" data-width="290" data-height="145">
-                      </div>
-                      <div class="text-center mt-5">
-                        <h5>MTTR Target : 10 /<small><b>Per Minutes</b></small> </h1>
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
