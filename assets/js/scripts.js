@@ -873,6 +873,11 @@
 
   NioApp.Picker.init = function () {
     NioApp.Picker.date('.date-picker');
+    NioApp.Picker.date('.date-picker-custom',{
+      format: "yyyymm",
+      startView: "months", 
+      minViewMode: "months"
+    });
     NioApp.Picker.dob('.date-picker-alt');
     NioApp.Picker.time('.time-picker');
     NioApp.Picker.date('.date-picker-range', {
