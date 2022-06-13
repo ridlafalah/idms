@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="your apps desc here" />
   <link rel="shortcut icon" href="./images/favicon.png" />
-  <title>Search Order | IDMS</title>
+  <title>Schedule | IDMS</title>
 
   <link rel="stylesheet" href="assets/css/dashlite.css" />
   <link rel="stylesheet" href="assets/css/theme.css" />
@@ -190,14 +190,14 @@
                     class="icon ni ni-menu"></em></a>
               </div>
               <div class="nk-header-brand d-xl-none">
-               <a href="html/idms-dashboard-orders.html" class="logo-link nk-sidebar-logo">
-  <span>
-    <h3>
-      <em class="icon ni ni-activity-round-fill gradient-text"></em>
-      <span class="gradient-text">IDMS</span>
-    </h3>
-  </span>
-</a>
+                <a href="html/idms-dashboard-orders.html" class="logo-link nk-sidebar-logo">
+                  <span>
+                    <h3>
+                      <em class="icon ni ni-activity-round-fill gradient-text"></em>
+                      <span class="gradient-text">IDMS</span>
+                    </h3>
+                  </span>
+                </a>
               </div>
               <div class="nk-header-search ms-3 ms-xl-0">
                 <!-- <em class="icon ni ni-search"></em> -->
@@ -289,227 +289,146 @@
           </div>
         </div>
 
-        <div class="nk-content ">
+        <div class="nk-content">
           <div class="container-fluid">
             <div class="nk-content-inner">
               <div class="nk-content-body">
                 <div class="nk-block-head nk-block-head-sm">
                   <div class="nk-block-between">
                     <div class="nk-block-head-content">
-                      <h3 class="nk-block-title page-title">
-                        Search Orders</h3>
+                      <h3 class="nk-block-title page-title">Data Schedule</h3>
                     </div>
                     <div class="nk-block-head-content">
                       <div class="toggle-wrap nk-block-tools-toggle">
                         <a href="#" class="btn btn-icon btn-trigger toggle-expand me-n1" data-target="pageMenu"><em
                             class="icon ni ni-more-v"></em></a>
                         <div class="toggle-expand-content" data-content="pageMenu">
-                          <form action="">
-                            <ul class="nk-block-tools g-3">
-                              <li>
-                                <select class="form-select js-select2" data-placeholder="Choose Type"
-                                  style="width: 100%">
-                                  <!-- <option value="default_option">Choose Type</option> -->
-                                  <option value="Billing">Billing</option>
-                                  <option value="Reminding">Reminding</option>
-                                </select>
-                              </li>
-                              <li>
-                                <div class="form-control-wrap" style="width: 300px">
-                                  <div class="form-icon form-icon-right">
-                                    <em class="icon ni ni-search"></em>
-                                  </div>
-                                  <input type="text" class="form-control" id="default-04" placeholder="ND or SND">
-                                </div>
-                              </li>
-                              <li class="nk-block-tools-opt">
-                                <button class="toggle btn btn-icon btn-primary d-md-none"><em
-                                    class="icon ni ni-search"></em></button>
-                                <button type="submit" class="toggle btn btn-primary d-none d-md-inline-flex"><em
-                                    class="icon ni ni-search"></em></button>
-                              </li>
-                            </ul>
-                          </form>
+
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="nk-block">
-                  <div class="card card-bordered card-preview">
-                    <div class="card-inner">
-                      <div class="row g-gs">
-                        <div class="col-xxl-2 col-md-4 col-sm-12">
-                          <ul class="nav link-list-menu border border-light round m-0">
-                            <li>
-                              <a class="active" data-bs-toggle="tab" href="#email">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                Email
-                              </a>
-                            </li>
-                            <li>
-                              <a class="" data-bs-toggle="tab" href="#obc">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                OBC
-                              </a>
-                            </li>
-                            <li>
-                              <a class="" data-bs-toggle="tab" href="#sms">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                SMS
-                              </a>
-                            </li>
-                            <li>
-                              <a class="" data-bs-toggle="tab" href="#tvms">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                TVMS
-                              </a>
-                            </li>
-                            <li>
-                              <a class="" data-bs-toggle="tab" href="#whatsapp">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                Whatsapp
-                              </a>
-                            </li>
-                            <li>
-                              <a class="" data-bs-toggle="tab" href="#ovr">
-                                <span class="badge bg-info" style="margin-right: 10px;">0</span>
-                                OVR
-                              </a>
-                            </li>
-                          </ul>
+
+                <div class="card card-bordered card-preview">
+                  <div class="card-inner">
+                    <ul class="nav nav-tabs mt-n3">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tab-billings">Billings</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-reminding">Reminding</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab-billings">
+                        <h5>Billings Schedule On Demand</h5>
+                        <div class="table-responsive">
+                          <table class="datatable-init-export nowrap table" id="tabel-ebs-indihome-sum"
+                            data-export-title="Export">
+                            <thead>
+                              <tr>
+                                <th>No</th>
+                                <th>Engine</th>
+                                <th>Status Process</th>
+                                <th>LUP</th>
+                            </thead>
+                            <tbody>
+                              <!-- <tr>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                    <td>xx</td>
+                                  </tr> -->
+                            </tbody>
+                          </table>
                         </div>
-                        <div class="col-xxl-10 col-md-8 col-sm-12">
-                          <div class="tab-content">
-                            <div class="tab-pane active" id="email">
-                              <h5>History Email</h5>
-                              <table class="datatable-init nowrap table" id="tableemail">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>SND</th>
-                                    <th>Result</th>
-                                    <th>Date Proccess</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
+                      </div>
+                      <div class="tab-pane" id="tab-reminding">
+                        <h5>Filter Reminding</h5>
+                        <div class="mb-5">
+                          <form action="#">
+                            <div class="row g-4">
+                              <div class="col-lg-2">
+                                <div class="form-group">
+                                  <label class="form-label" for="filter_schedule_period">Period</label>
+                                  <div class="form-control-wrap">
+                                    <input type="text" class="form-control date-picker-custom"
+                                      id="filter_schedule_period" data-date-format="yyyymm">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form-group">
+                                  <label class="form-label" for="filter_schedule_status">Status</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-select js-select2" id="filter_schedule_status"
+                                      data-placeholder="Choose" style="width: 100%">
+                                      <option value="default_option">Choose</option>
+                                      <option value="unprocessed">Unprocessed</option>
+                                      <option value="processed">Processed</option>
+                                      <option value="been_processed">Been Processed</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form-group">
+                                  <label class="form-label" for="filter_schedule_channel">Channel</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-select js-select2" id="filter_schedule_channel"
+                                      data-placeholder="Choose" style="width: 100%">
+                                      <option value="default_option">Choose</option>
+                                      <option value="Channel1">Channel 1</option>
+                                      <option value="Channel2">Channel 2</option>
+                                      <option value="Channel3">Channel 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                              </div>
                             </div>
-                            <div class="tab-pane" id="obc">
-                              <h5>History OBC</h5>
-                              <table class="datatable-init nowrap table" id="tableobc">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>SND</th>
-                                    <th>Result</th>
-                                    <th>Date Proccess</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="tab-pane" id="sms">
-                              <h5>History SMS</h5>
-                              <table class="datatable-init nowrap table" id="tablesms">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>SND</th>
-                                    <th>Result</th>
-                                    <th>Date Proccess</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="tab-pane" id="tvms">
-                              <h5>History TVMS</h5>
-                              <table class="datatable-init nowrap table" id="tabletvms">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>SND</th>
-                                    <th>Result</th>
-                                    <th>Date Proccess</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="tab-pane" id="whatsapp">
-                              <h5>History Whatsapp</h5>
-                              <table class="datatable-init nowrap table" id="tablewhatsapp">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>SND</th>
-                                    <th>Result</th>
-                                    <th>Date Proccess</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="tab-pane" id="ovr">
-                              <h5>History OVR</h5>
-                              <table class="datatable-init nowrap table" id="tableovr">
-                                <thead>
-                                  <tr>
-                                    <th>Period</th>
-                                    <th>ND</th>
-                                    <th>Status Call</th>
-                                    <th>Reason Call</th>
-                                    <th>Date Call</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- <tr>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                          <td>xx</td>
-                                        </tr> -->
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
+                          </form>
+                        </div>
+
+                        <h5>Reminding Schedule On Demand</h5>
+                        <div class="table-responsive">
+                          <table class="datatable-init-export nowrap table" id="tabel-ebs-indihome-sum"
+                            data-export-title="Export">
+                            <thead>
+                              <tr>
+                                <th>No</th>
+                                <th>Channel</th>
+                                <th>Periode</th>
+                                <th>Jumlah Order</th>
+                                <th>Time Schedule</th>
+                                <th>Status Process</th>
+                                <th>Sisa Data</th>
+                                <th>UPD</th>
+                                <th>LUP</th>
+                                <th>END DATE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                              <!-- <tr>
+                                                        <td>No</td>
+                                                        <td>Channel</td>
+                                                        <td>Periode</td>
+                                                        <td>Jumlah Order</td>
+                                                        <td>Time Schedule</td>
+                                                        <td>Status Process</td>
+                                                        <td>Sisa Data</td>
+                                                        <td>UPD</td>
+                                                        <td>LUP</td>
+                                                        <td>END DATE</td>
+                                                    </tr> -->
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -534,6 +453,7 @@
       </div>
     </div>
   </div>
+
   <script src="assets/js/bundle.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/charts/chart-ecommerce.js"></script>
