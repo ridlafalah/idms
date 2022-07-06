@@ -190,14 +190,14 @@
                     class="icon ni ni-menu"></em></a>
               </div>
               <div class="nk-header-brand d-xl-none">
-               <a href="html/idms-dashboard-orders.html" class="logo-link nk-sidebar-logo">
-  <span>
-    <h3>
-      <em class="icon ni ni-activity-round-fill gradient-text"></em>
-      <span class="gradient-text">IDMS</span>
-    </h3>
-  </span>
-</a>
+                <a href="html/idms-dashboard-orders.html" class="logo-link nk-sidebar-logo">
+                  <span>
+                    <h3>
+                      <em class="icon ni ni-activity-round-fill gradient-text"></em>
+                      <span class="gradient-text">IDMS</span>
+                    </h3>
+                  </span>
+                </a>
               </div>
               <div class="nk-header-search ms-3 ms-xl-0">
                 <!-- <em class="icon ni ni-search"></em> -->
@@ -311,7 +311,8 @@
                                 <div class="form-icon form-icon-left">
                                   <em class="icon ni ni-calendar"></em>
                                 </div>
-                                <input type="text" class="form-control date-picker" data-date-format="yyyy-mm-dd" placeholder="Select Date">
+                                <input type="text" class="form-control date-picker" data-date-format="yyyy-mm-dd"
+                                  placeholder="Select Date">
                               </div>
                             </li>
                             <li class="nk-block-tools-opt">
@@ -340,7 +341,7 @@
                       <div class="data">
                         <div class="data-group">
                           <div class="amount">
-                            <h1>93.<small>21</small></h1>
+                            <h1>93.<small>21%</small></h1>
                           </div>
                           <div class="nk-ecwg6-ck">
                             <em class="icon ni ni-meter h1 text-teal"
@@ -437,177 +438,313 @@
                 </div>
               </div>
               <div class="col-md-12 col-xxl-9">
-                <div class="nk-block">
-                  <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
-                      <div class="nk-tb-col w-30">
-                        <div class="user-card">
-                          <em class="icon ni ni-at h3 text-danger" style="margin-right: 15px;"></em>
-                          <div class="user-info">
-                            <span class="tb-lead h5">Email</span>
+
+                <div class="row g-gs">
+                  <div class="col-xxl-4 col-sm-6">
+                    <div class="card card-bordered" style="position:relative;">
+                      <div class="nk-ecwg nk-ecwg6">
+                        <div class="card-inner">
+                          <div class="card-title-group">
+                            <div class="card-title">
+                              <h6 class="title">Email</h6>
+                            </div>
+                            <div class="card-tools">
+                              <em class="card-hint icon ni ni-at h1 text-danger" style="font-size:2rem ;"></em>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      
-                      <div class="nk-tb-col tb-col-mb w-25">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Current</span>
-                            <span>123.456</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md w-50">
-                        <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" data-progress="50" style="width: 50%;">50%</div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Target </span>
-                            <span>456.789</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead"><span class="badge badge-sm bg-secondary">Score : 4.8</span> </span>
+                          <hr>
+                          <div class="data">
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Per Hour</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data">
+                                <span class="amount sm">
+                                  123.456
+                                  <!-- icon ini muncul ketika target per jam tercapai atau terlampaui -->
+                                  <em class="card-hint icon ni ni-check-circle-fill h1 text-teal"
+                                    data-bs-toggle="tooltip" data-bs-placement="right" title=""
+                                    data-bs-original-title="Target Per Hour Achived"
+                                    aria-label="Target Per Hour Achived"></em>
+                                </span>
+                              </div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Total Progress</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                data-progress="50" style="width: 50%;">50%</div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-xxl-4 col-sm-6">
+                    <div class="card card-bordered" style="position:relative;">
+                      <div class="nk-ecwg nk-ecwg6">
+                        <div class="card-inner">
+                          <div class="card-title-group">
+                            <div class="card-title">
+                              <h6 class="title">SMS</h6>
+                            </div>
+                            <div class="card-tools">
+                              <em class="card-hint icon ni ni-mail-fill h1 text-warning" style="font-size:2rem ;"></em>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="data">
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Per Hour</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
 
-                  <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
-                      <div class="nk-tb-col w-30">
-                        <div class="user-card">
-                          <em class="icon ni ni-mail-fill h3 text-warning" style="margin-right: 15px;"></em>
-                          <div class="user-info">
-                            <span class="tb-lead h5">SMS </span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="nk-tb-col tb-col-mb w-25">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Current</span>
-                            <span>123.456</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md w-50">
-                        <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" data-progress="50" style="width: 50%;">50%</div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Target </span>
-                                <span>456.789</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead"><span class="badge badge-sm bg-secondary">Score : 4.8</span> </span>
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Total Progress</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                data-progress="50" style="width: 50%;">50%</div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-xxl-4 col-sm-6">
+                    <div class="card card-bordered" style="position:relative;">
+                      <div class="nk-ecwg nk-ecwg6">
+                        <div class="card-inner">
+                          <div class="card-title-group">
+                            <div class="card-title">
+                              <h6 class="title">OVR</h6>
+                            </div>
+                            <div class="card-tools">
+                              <em class="card-hint icon ni ni-account-setting-fill h1 text-purple"
+                                style="font-size:2rem ;"></em>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="data">
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Per Hour</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
 
-                  <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
-                      <div class="nk-tb-col w-30">
-                        <div class="user-card">
-                          <em class="icon ni ni-account-setting-fill h3 text-purple" style="margin-right: 15px;"></em>
-                          <div class="user-info">
-                            <span class="tb-lead h5">OVR </span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="nk-tb-col tb-col-mb w-25">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Current</span>
-                            <span>123.456</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md w-50">
-                        <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-purple" data-progress="50" style="width: 50%;">50%</div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Target </span>
-                                <span>456.789</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead"><span class="badge badge-sm bg-secondary">Score : 4.8</span> </span>
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Total Progress</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-purple"
+                                data-progress="50" style="width: 50%;">50%</div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-xxl-6 col-sm-6">
+                    <div class="card card-bordered" style="position:relative;">
+                      <div class="nk-ecwg nk-ecwg6">
+                        <div class="card-inner">
+                          <div class="card-title-group">
+                            <div class="card-title">
+                              <h6 class="title">TVMS</h6>
+                            </div>
+                            <div class="card-tools">
+                              <em class="card-hint icon ni ni-monitor h1 text-orange" style="font-size:2rem ;"></em>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="data">
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Per Hour</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
 
-                  <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
-                      <div class="nk-tb-col w-30">
-                        <div class="user-card">
-                          <em class="icon ni ni-monitor h3 text-orange" style="margin-right: 15px;"></em>
-                          <div class="user-info">
-                            <span class="tb-lead h5">TVMS </span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="nk-tb-col tb-col-mb w-25">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Current</span>
-                            <span>123.456</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md w-50">
-                        <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-orange" data-progress="50" style="width: 50%;">50%</div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Target </span>
-                                <span>456.789</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead"><span class="badge badge-sm bg-secondary">Score : 4.8</span> </span>
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Total Progress</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-orange"
+                                data-progress="50" style="width: 50%;">50%</div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-xxl-6 col-sm-6">
+                    <div class="card card-bordered" style="position:relative;">
+                      <div class="nk-ecwg nk-ecwg6">
+                        <div class="card-inner">
+                          <div class="card-title-group">
+                            <div class="card-title">
+                              <h6 class="title">Whatsapp</h6>
+                            </div>
+                            <div class="card-tools">
+                              <em class="card-hint icon ni ni-whatsapp h1 text-teal" style="font-size:2rem ;"></em>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="data">
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Per Hour</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
 
+                            <div class="nk-sale-data-group align-center justify-between gx-5"
+                              style="position:relative ;">
+                              <div class="nk-sale-data"><span class="amount sm text-black">Total Progress</span></div>
+                              <div class="nk-sale-data"><span class="amount sm"><span
+                                    class="pricing-badge badge bg-secondary">Score : 5</span></span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gy-3 gx-5">
+                              <div class=""><span class="">Current</span></div>
+                              <div class=""><span class="">Target</span>
+                              </div>
+                            </div>
+                            <div class="nk-sale-data-group align-center justify-between gx-5">
+                              <div class="nk-sale-data"><span class="amount sm">123.456</span></div>
+                              <div class="nk-sale-data"><span class="amount sm">456.789</span>
+                              </div>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated bg-teal"
+                                data-progress="50" style="width: 50%;">50%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nk-block mt-4">
                   <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
+                    <div class="bg-white" style="border: 1px solid #dbdfea;">
                       <div class="nk-tb-col w-30">
                         <div class="user-card">
                           <em class="icon ni ni-clock-fill h3 text-blue" style="margin-right: 15px;"></em>
@@ -616,49 +753,7 @@
                           </div>
                         </div>
                       </div>
-                      
-                      <div class="nk-tb-col tb-col-mb w-25">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Current</span>
-                            <span>123.456</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md w-50">
-                        <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-blue" data-progress="50" style="width: 50%;">50%</div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead">Target </span>
-                                <span>456.789</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="nk-tb-col tb-col-md">
-                        <div class="user-card">
-                          <div class="user-info">
-                            <span class="tb-lead"><span class="badge badge-sm bg-secondary">Score : 4.8</span> </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="nk-tb-list is-separate mb-4">
-                    <div class="nk-tb-item">
-                      <div class="nk-tb-col w-30">
-                        <div class="user-card">
-                          <em class="icon ni ni-whatsapp h3 text-teal" style="margin-right: 15px;"></em>
-                          <div class="user-info">
-                            <span class="tb-lead h5">WA</span>
-                          </div>
-                        </div>
-                      </div>
-                      
                       <div class="nk-tb-col tb-col-mb w-25">
                         <div class="user-card">
                           <div class="user-info">
@@ -669,14 +764,15 @@
                       </div>
                       <div class="nk-tb-col tb-col-md w-50">
                         <div class="progress progress-lg">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-teal" data-progress="50" style="width: 50%;">50%</div>
+                          <div class="progress-bar progress-bar-striped progress-bar-animated bg-blue"
+                            data-progress="50" style="width: 50%;">50%</div>
                         </div>
                       </div>
                       <div class="nk-tb-col tb-col-md">
                         <div class="user-card">
                           <div class="user-info">
                             <span class="tb-lead">Target </span>
-                                <span>456.789</span>
+                            <span>456.789</span>
                           </div>
                         </div>
                       </div>
